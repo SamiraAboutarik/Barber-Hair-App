@@ -25,7 +25,7 @@ const Header = () => {
           className="text-3xl font-bold text-[#BFA45B] tracking-wide"
           whileHover={{ scale: 1.05 }}
         >
-          Royal Barber Studio
+          SaLuxe
         </motion.h1>
         <nav className="hidden md:flex space-x-8">
           {['Home', 'Services', 'Team', 'Pricing', 'Gallery', 'Booking'].map((item) => (
