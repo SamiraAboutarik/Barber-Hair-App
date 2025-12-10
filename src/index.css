@@ -1,0 +1,53 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom Font (Optional: Use a luxury font like Playfair Display or Cinzel) */
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap');
+
+body {
+  font-family: 'Cinzel', serif; /* Luxury serif font for headings */
+  margin: 0;
+  padding: 0;
+  background-color: #0D0D0D;
+  color: #F5F5F5;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+}
+
+/* Glassmorphism Utility */
+.glass {
+  background: rgba(39, 39, 39, 0.5);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(191, 164, 91, 0.3);
+  border-radius: 16px;
+}
+
+/* Custom Scrollbar (Optional for premium feel) */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #111315;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #BFA45B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #C9A86A;
+}
+
+/* Animation Classes for Floating Elements */
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.animate-shine {
+  background: linear-gradient(90deg, #BFA45B, #C9A86A, #BFA45B);
+  background-size: 200% 200%;
+  animation: shine 2s linear infinite;
+}
+
